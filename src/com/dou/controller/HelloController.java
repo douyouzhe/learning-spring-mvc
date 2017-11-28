@@ -3,9 +3,7 @@ package com.dou.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.portlet.bind.annotation.RenderMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
 
 import java.util.Map;
 
@@ -68,7 +66,8 @@ import java.util.Map;
 //    }
 //}
 
-// use map
+
+//use map
 @Controller
 public class HelloController{
     // use {} to replace address

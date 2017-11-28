@@ -20,16 +20,13 @@
     that you are using annotation-->
 
     <context:component-scan base-package="com.dou.controller"/>
-
-
     <bean id="viewResolver"
     class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
-            <value>/WEB-INF/</value>
+            <value>/view/</value>
         </property>
         <property name="suffix">
             <value>.jsp</value>
         </property>
-
     </bean>
 </beans>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -17,18 +18,15 @@
     <!--Used when with annotation-->
     <!--when the front controller sees this, it understand
     that you are using annotation-->
-    
+
     <context:component-scan base-package="com.dou.controller"/>
-
-
     <bean id="viewResolver"
     class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
-            <value>/WEB-INF/</value>
+            <value>/view/</value>
         </property>
         <property name="suffix">
             <value>.jsp</value>
         </property>
-
     </bean>
 </beans>
